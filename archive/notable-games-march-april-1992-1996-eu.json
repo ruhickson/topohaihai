@@ -1,0 +1,664 @@
+{
+  "meta": {
+    "description": "Notable games from the March/April 1992–1996 discussion, with European (EU/PAL/UK) release metadata where available.",
+    "region_scope": "EU",
+    "notes": [
+      "reference_* fields reflect the March/April calendar context from NA/JP-oriented release lists (not EU dates).",
+      "eu_release_date uses European/PAL retail or documented EU digital dates when found; many titles shipped in NA/JP in March/April but launched later (or not at all on the same format) in Europe.",
+      "null eu_release_date means: not verified here, no documented EU release on that platform, or release was import-only.",
+      "Verify dates against Nintendo regional sites, MobyGames, or publisher records before citing as authoritative."
+    ],
+    "generated": "2026-03-19"
+  },
+  "games": [
+    {
+      "title": "Fire Emblem Gaiden",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1992, "month": 3, "day": 14, "region_note": "Japan (Famicom)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Original release Japan-only; no contemporary EU/PAL Famicom/NES release."
+    },
+    {
+      "title": "Fatal Fury",
+      "platforms_eu": ["Mega Drive"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1992, "month": 3, "day": 4, "region_note": "varies by platform/region" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU Mega Drive/PAL date not verified in this file."
+    },
+    {
+      "title": "Final Fight Guy",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1992, "month": 3, "day": 20, "region_note": "North America (SNES)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Not known to have a standalone EU/PAL retail release equivalent; verify if needed."
+    },
+    {
+      "title": "WWF Super WrestleMania",
+      "platforms_eu": ["SNES", "Mega Drive"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1992, "month": 3, "day": 1, "region_note": "release list date" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL date not verified in this file."
+    },
+    {
+      "title": "Cosmo's Cosmic Adventure",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1992, "month": 3, "day": 1, "region_note": "DOS (often US-first)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "PC DOS; EU-specific street date not verified."
+    },
+    {
+      "title": "Alisia Dragoon",
+      "platforms_eu": ["Mega Drive"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1992, "month": 3, "day": 1, "region_note": "release list date" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL date not verified in this file."
+    },
+    {
+      "title": "The Legend of Zelda: A Link to the Past",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": "1992-09-24",
+      "eu_release_date_precision": "day",
+      "reference_release_context": { "year": 1992, "month": 4, "day": 13, "region_note": "North America (SNES)" },
+      "matches_march_or_april_in_eu": false,
+      "notes": "EU/PAL SNES release commonly cited September 1992 (not March/April in EU)."
+    },
+    {
+      "title": "Kirby's Dream Land",
+      "platforms_eu": ["Game Boy"],
+      "eu_release_date": "1992-12-01",
+      "eu_release_date_precision": "month",
+      "reference_release_context": { "year": 1992, "month": 4, "day": 27, "region_note": "North America (Game Boy)" },
+      "matches_march_or_april_in_eu": false,
+      "notes": "EU Game Boy release often listed December 1992 (sources vary on exact day); not March/April in EU."
+    },
+    {
+      "title": "Ultima VII: The Black Gate",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1992, "month": 4, "day": 16, "region_note": "DOS (US/English markets)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU-specific PC date not verified; often treated as English-language simultaneous-ish."
+    },
+    {
+      "title": "Aerobiz",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1992, "month": 4, "day": 5, "region_note": "release list date" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL date not verified in this file."
+    },
+    {
+      "title": "Baseball Stars 2",
+      "platforms_eu": ["Neo Geo", "SNES"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1992, "month": 4, "day": 15, "region_note": "release list date" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL date not verified in this file."
+    },
+    {
+      "title": "Star Fox",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": "1993-06-03",
+      "eu_release_date_precision": "day",
+      "eu_alternate_title_in_region": "Starwing",
+      "reference_release_context": { "year": 1993, "month": 3, "day": 22, "region_note": "North America (SNES)" },
+      "matches_march_or_april_in_eu": false,
+      "notes": "Marketed as Starwing in EU/PAL; June 1993 EU (UK sometimes cited a few days later)."
+    },
+    {
+      "title": "Teenage Mutant Ninja Turtles: Turtles in Time",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 3, "region_note": "release list (month only)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL SNES date not verified in this file (often later than US)."
+    },
+    {
+      "title": "Ogre Battle: The March of the Black Queen",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 3, "day": 12, "region_note": "release list date" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL date not verified in this file."
+    },
+    {
+      "title": "Splatterhouse 3",
+      "platforms_eu": ["Mega Drive"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 3, "day": 19, "region_note": "North America (Genesis)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU Mega Drive/PAL date not verified in this file."
+    },
+    {
+      "title": "Ultima VII Part Two: Serpent Isle",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 3, "day": 25, "region_note": "DOS" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU-specific PC date not verified."
+    },
+    {
+      "title": "Dragon Ball Z: Super Butōden",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 3, "day": 20, "region_note": "Japan (Super Famicom)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Japan-only original release; no contemporary EU SNES release."
+    },
+    {
+      "title": "The Lost Vikings",
+      "platforms_eu": ["SNES", "Amiga", "DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 4, "day": 1, "region_note": "release list date" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL date not verified in this file."
+    },
+    {
+      "title": "Breath of Fire",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 4, "day": 3, "region_note": "North America (SNES)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL SNES release timing not verified here (often later)."
+    },
+    {
+      "title": "Super Bomberman",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 4, "day": 28, "region_note": "North America (SNES)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL date not verified in this file."
+    },
+    {
+      "title": "The 7th Guest",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 4, "day": 28, "region_note": "DOS (US)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU PC date not verified in this file."
+    },
+    {
+      "title": "The 7th Saga",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 4, "day": 23, "region_note": "North America (SNES)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL date not verified in this file."
+    },
+    {
+      "title": "Dark Sun: Shattered Lands",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 4, "region_note": "release list (month only)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU PC date not verified in this file."
+    },
+    {
+      "title": "Sid Meier's Railroad Tycoon Deluxe",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 4, "day": 2, "region_note": "DOS" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU PC date not verified in this file."
+    },
+    {
+      "title": "Monster Bash",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1993, "month": 4, "day": 9, "region_note": "DOS (shareware)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU-specific date not verified."
+    },
+    {
+      "title": "NBA Jam",
+      "platforms_eu": ["SNES", "Mega Drive"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 3, "day": 4, "region_note": "North America (SNES)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL dates vary by platform and territory; not verified in this file (often not March in EU)."
+    },
+    {
+      "title": "X-COM: UFO Defense",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 3, "day": 1, "region_note": "DOS (US)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU PC date not verified in this file."
+    },
+    {
+      "title": "Wario Land: Super Mario Land 3",
+      "platforms_eu": ["Game Boy"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 3, "day": 13, "region_note": "Japan (Game Boy)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU Game Boy date not verified in this file."
+    },
+    {
+      "title": "Castlevania: Bloodlines",
+      "platforms_eu": ["Mega Drive"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "eu_alternate_title_in_region": "The New Generation",
+      "reference_release_context": { "year": 1994, "month": 3, "day": 17, "region_note": "North America (Genesis)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Titled The New Generation in EU/PAL; exact EU date not verified in this file."
+    },
+    {
+      "title": "Shin Megami Tensei II",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 3, "day": 18, "region_note": "Japan (Super Famicom)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Original release Japan-only; no contemporary EU SNES release."
+    },
+    {
+      "title": "The Elder Scrolls: Arena",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 3, "day": 25, "region_note": "DOS (US)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU PC date not verified in this file."
+    },
+    {
+      "title": "Ken Griffey Jr. Presents Major League Baseball",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 3, "day": 1, "region_note": "North America (SNES)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Often NA-centric; EU/PAL date not verified in this file."
+    },
+    {
+      "title": "Zoda's Revenge: StarTropics II",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 3, "day": 1, "region_note": "North America (NES)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "NES title with limited EU presence; EU date not verified."
+    },
+    {
+      "title": "Sonic Drift",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 3, "day": 18, "region_note": "Japan (Game Gear)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Japan-only original release."
+    },
+    {
+      "title": "Super Metroid",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": "1994-07-28",
+      "eu_release_date_precision": "day",
+      "reference_release_context": { "year": 1994, "month": 4, "day": 18, "region_note": "North America (SNES)" },
+      "matches_march_or_april_in_eu": false,
+      "notes": "EU/PAL SNES widely cited as 28 July 1994."
+    },
+    {
+      "title": "Final Fantasy VI",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 4, "day": 2, "region_note": "Japan (Super Famicom)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Original Super Famicom JP release; no PAL SNES release at the time (later ports to other regions)."
+    },
+    {
+      "title": "Daytona USA",
+      "platforms_eu": ["Arcade"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 4, "region_note": "arcade (Japan first)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU arcade rollout timing not verified in this file."
+    },
+    {
+      "title": "Hotel Mario",
+      "platforms_eu": ["CD-i"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 4, "day": 5, "region_note": "CD-i (regional)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Philips CD-i EU availability not verified to day/month here."
+    },
+    {
+      "title": "Tempest 2000",
+      "platforms_eu": ["Atari Jaguar"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 4, "day": 13, "region_note": "North America (Jaguar)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL Jaguar date not verified in this file."
+    },
+    {
+      "title": "Raptor: Call of the Shadows",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 4, "day": 1, "region_note": "DOS (shareware)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU-specific PC date not verified."
+    },
+    {
+      "title": "Super Bomberman 2",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1994, "month": 4, "day": 28, "region_note": "North America (SNES)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/PAL date not verified in this file."
+    },
+    {
+      "title": "Chrono Trigger",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 11, "region_note": "Japan (Super Famicom)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "No original PAL SNES release; later EU releases on other platforms (e.g. DS)."
+    },
+    {
+      "title": "Star Wars: Dark Forces",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 8, "region_note": "North America (DOS)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU PC date not verified in this file."
+    },
+    {
+      "title": "Descent",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 17, "region_note": "DOS (US)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU PC date not verified in this file."
+    },
+    {
+      "title": "Comix Zone",
+      "platforms_eu": ["Mega Drive"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 11, "region_note": "North America (Genesis)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU Mega Drive/PAL date not verified in this file."
+    },
+    {
+      "title": "Beyond Oasis",
+      "platforms_eu": ["Mega Drive"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 15, "region_note": "North America (Genesis)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU Mega Drive/PAL date not verified in this file."
+    },
+    {
+      "title": "Earthworm Jim: Special Edition",
+      "platforms_eu": ["Mega CD"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 15, "region_note": "Sega CD (regional)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU Mega-CD/PAL date not verified in this file."
+    },
+    {
+      "title": "Mega Man 7",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 24, "region_note": "Japan/NA (SNES) — EU SNES release uncommon" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "No standard EU/PAL SNES retail release; later collections/ports elsewhere."
+    },
+    {
+      "title": "Kirby's Dream Land 2",
+      "platforms_eu": ["Game Boy"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 21, "region_note": "Japan (Game Boy)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU Game Boy date not verified in this file."
+    },
+    {
+      "title": "Shining Force CD",
+      "platforms_eu": ["Mega CD"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 22, "region_note": "Japan (Mega-CD)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Japan-first; EU Mega-CD date not verified in this file."
+    },
+    {
+      "title": "Beneath a Steel Sky",
+      "platforms_eu": ["DOS", "Amiga"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 1, "region_note": "DOS/Amiga (UK/EU developer)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "UK/EU-developed; exact EU retail day not verified here."
+    },
+    {
+      "title": "Lost Eden",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 1, "region_note": "DOS" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU PC date not verified in this file."
+    },
+    {
+      "title": "Discworld",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 3, "day": 1, "region_note": "DOS (UK/EU market)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU PC date not verified to exact day in this file."
+    },
+    {
+      "title": "Knuckles' Chaotix",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 4, "day": 21, "region_note": "North America (32X)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "32X had very limited EU footprint; EU date not verified."
+    },
+    {
+      "title": "Virtua Fighter Remix",
+      "platforms_eu": ["Sega Saturn"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1995, "month": 4, "day": 1, "region_note": "Japan (Saturn)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU Saturn date not verified in this file."
+    },
+    {
+      "title": "Resident Evil",
+      "platforms_eu": ["PlayStation"],
+      "eu_release_date": "1996-08-01",
+      "eu_release_date_precision": "day",
+      "reference_release_context": { "year": 1996, "month": 3, "day": 22, "region_note": "Japan (PlayStation)" },
+      "matches_march_or_april_in_eu": false,
+      "notes": "EU/PAL PlayStation release commonly cited August 1996 (after March JP/NA launches)."
+    },
+    {
+      "title": "Panzer Dragoon II Zwei",
+      "platforms_eu": ["Sega Saturn"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1996, "month": 3, "day": 22, "region_note": "Japan (Saturn)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU Saturn date not verified in this file."
+    },
+    {
+      "title": "Descent II",
+      "platforms_eu": ["DOS"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1996, "month": 3, "day": 13, "region_note": "DOS (US)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU PC date not verified in this file."
+    },
+    {
+      "title": "D",
+      "platforms_eu": ["PlayStation", "Sega Saturn"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1996, "month": 3, "day": 31, "region_note": "Japan (3DO/Saturn/PS1 staggered)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU release timing varies by platform; not verified in this file."
+    },
+    {
+      "title": "DoReMi Fantasy: Milon's DokiDoki Adventure",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1996, "month": 3, "day": 22, "region_note": "Japan (Super Famicom)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Japan-only original release."
+    },
+    {
+      "title": "Magical Drop III",
+      "platforms_eu": ["Neo Geo"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1996, "month": 3, "day": 21, "region_note": "Neo Geo (Japan)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU arcade/home timing not verified in this file."
+    },
+    {
+      "title": "Metal Slug",
+      "platforms_eu": ["Arcade", "Neo Geo"],
+      "eu_release_date": null,
+      "eu_release_date_precision": "year",
+      "reference_release_context": { "year": 1996, "month": 4, "day": 19, "region_note": "Neo Geo arcade (Japan)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU arcade presence in 1996 is plausible but exact EU date not verified here."
+    },
+    {
+      "title": "NBA Hangtime",
+      "platforms_eu": ["Arcade"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1996, "month": 4, "day": 16, "region_note": "arcade (US)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU arcade date not verified in this file."
+    },
+    {
+      "title": "The Settlers II: Veni, Vidi, Vici",
+      "platforms_eu": ["DOS", "Windows"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1996, "month": 4, "day": 1, "region_note": "DOS/Windows (EU developer)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU/German-market release; exact EU day not verified in this file."
+    },
+    {
+      "title": "Command & Conquer: The Covert Operations",
+      "platforms_eu": ["DOS", "Windows"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1996, "month": 4, "day": 30, "region_note": "DOS/Windows (expansion)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU PC date not verified in this file."
+    },
+    {
+      "title": "The Legend of Oasis",
+      "platforms_eu": ["Mega Drive"],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1996, "month": 4, "day": 26, "region_note": "North America (Genesis)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "EU Mega Drive/PAL date not verified in this file."
+    },
+    {
+      "title": "Treasure of the Rudras",
+      "platforms_eu": [],
+      "eu_release_date": null,
+      "eu_release_date_precision": null,
+      "reference_release_context": { "year": 1996, "month": 4, "day": 5, "region_note": "Japan (Super Famicom)" },
+      "matches_march_or_april_in_eu": null,
+      "notes": "Japan-only original release."
+    }
+  ],
+  "confirmed_eu_releases": [
+    {
+      "title": "The Legend of Zelda: A Link to the Past",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": "1992-09-24",
+      "eu_release_date_precision": "day"
+    },
+    {
+      "title": "Kirby's Dream Land",
+      "platforms_eu": ["Game Boy"],
+      "eu_release_date": "1992-12-01",
+      "eu_release_date_precision": "month"
+    },
+    {
+      "title": "Star Fox",
+      "eu_alternate_title_in_region": "Starwing",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": "1993-06-03",
+      "eu_release_date_precision": "day"
+    },
+    {
+      "title": "Super Metroid",
+      "platforms_eu": ["SNES"],
+      "eu_release_date": "1994-07-28",
+      "eu_release_date_precision": "day"
+    },
+    {
+      "title": "Resident Evil",
+      "platforms_eu": ["PlayStation"],
+      "eu_release_date": "1996-08-01",
+      "eu_release_date_precision": "day"
+    }
+  ],
+  "summary": {
+    "count": 58,
+    "with_eu_date_populated": 5,
+    "eu_dates_verified_in_file": [
+      "The Legend of Zelda: A Link to the Past",
+      "Kirby's Dream Land",
+      "Star Fox (Starwing)",
+      "Super Metroid",
+      "Resident Evil"
+    ]
+  }
+}

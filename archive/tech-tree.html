@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Super Metroid Map Rando Tech Tree</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 1rem 1.5rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: #050816;
+        color: #f9fafb;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .subtitle {
+        font-size: 0.9rem;
+        color: #9ca3af;
+        margin-bottom: 1rem;
+      }
+
+      .tree-container {
+        border-radius: 0.75rem;
+        background: radial-gradient(circle at top, #111827, #020617);
+        box-shadow: 0 22px 45px rgba(15, 23, 42, 0.9);
+        padding: 1rem 1.25rem;
+        max-height: calc(100vh - 3rem);
+        overflow: visible;
+      }
+
+      ul.tree {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .node {
+        position: relative;
+        margin: 0.1rem 0;
+        padding-left: 1.25rem;
+      }
+
+      .node::before {
+        content: "";
+        position: absolute;
+        left: 0.5rem;
+        top: 0.85rem;
+        width: 0.6rem;
+        height: 1px;
+        background: rgba(75, 85, 99, 0.8);
+      }
+
+      .node-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.1rem 0.3rem;
+        border-radius: 999px;
+        cursor: default;
+        transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+        font-size: 0.85rem;
+      }
+
+      .node-label.difficulty {
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        padding: 0.18rem 0.45rem;
+      }
+
+      .node-label.tech {
+        font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo,
+          Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 0.8rem;
+      }
+
+      .node-label.room {
+        font-size: 0.78rem;
+        opacity: 0.9;
+      }
+
+      .node-label:hover {
+        background: rgba(55, 65, 81, 0.7);
+        transform: translateY(-0.5px);
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 1.2rem;
+        padding: 0 0.1rem;
+        border-radius: 999px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        background: rgba(15, 118, 110, 0.18);
+        color: #a5f3fc;
+      }
+
+      .chevron {
+        width: 0.55rem;
+        height: 0.55rem;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #9ca3af;
+        transition: transform 0.18s ease;
+        font-size: 0.65rem;
+      }
+
+      .node.has-children > .node-label {
+        cursor: pointer;
+      }
+
+      .node.collapsed > ul {
+        display: none;
+      }
+
+      .node.collapsed > .node-label .chevron {
+        transform: rotate(-90deg);
+      }
+
+      .tabs {
+        display: inline-flex;
+        gap: 0.35rem;
+        margin-bottom: 0.6rem;
+        border-radius: 999px;
+        padding: 0.1rem;
+        background: rgba(15, 23, 42, 0.9);
+      }
+
+      .tab-button {
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        padding: 0.15rem 0.7rem;
+        font-size: 0.75rem;
+        color: #9ca3af;
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease,
+          transform 0.08s ease;
+      }
+
+      .tab-button.active {
+        background: radial-gradient(circle at top left, #2563eb, #a855f7);
+        color: #f9fafb;
+        transform: translateY(-0.5px);
+      }
+
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-bottom: 0.75rem;
+        font-size: 0.75rem;
+        color: #9ca3af;
+      }
+
+      .legend span {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.18rem;
+      }
+
+      .pill {
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 999px;
+      }
+
+      .pill-diff {
+        background: linear-gradient(135deg, #2563eb, #a855f7);
+      }
+
+      .pill-tech {
+        background: linear-gradient(135deg, #22c55e, #0ea5e9);
+      }
+
+      .pill-room {
+        background: linear-gradient(135deg, #fbbf24, #f97316);
+      }
+
+      .toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .toolbar-left {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      button {
+        background: rgba(15, 23, 42, 0.9);
+        color: #e5e7eb;
+        border-radius: 999px;
+        border: 1px solid rgba(55, 65, 81, 0.9);
+        padding: 0.25rem 0.6rem;
+        font-size: 0.75rem;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        transition: background 0.15s ease, transform 0.08s ease,
+          border-color 0.15s ease;
+      }
+
+      button:hover {
+        background: rgba(31, 41, 55, 0.95);
+        border-color: rgba(148, 163, 184, 0.9);
+        transform: translateY(-0.5px);
+      }
+
+      button:active {
+        transform: translateY(0.25px) scale(0.99);
+      }
+
+      .search-input {
+        flex: 1;
+        min-width: 160px;
+        max-width: 320px;
+        position: relative;
+      }
+
+      .search-input input {
+        width: 100%;
+        border-radius: 999px;
+        border: 1px solid rgba(55, 65, 81, 0.9);
+        padding: 0.25rem 0.75rem 0.25rem 1.5rem;
+        font-size: 0.78rem;
+        background: rgba(15, 23, 42, 0.95);
+        color: #e5e7eb;
+        outline: none;
+      }
+
+      .search-input input::placeholder {
+        color: #6b7280;
+      }
+
+      .search-input svg {
+        position: absolute;
+        left: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        stroke: #6b7280;
+      }
+
+      .highlight {
+        background: rgba(234, 179, 8, 0.2) !important;
+        color: #facc15 !important;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .tree-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 2.1fr) minmax(220px, 1.2fr);
+        gap: 0.9rem;
+        align-items: flex-start;
+        height: calc(100vh - 6.5rem);
+      }
+
+      .tree-scroll {
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 0.25rem;
+      }
+
+      .details-panel {
+        border-radius: 0.75rem;
+        background: radial-gradient(circle at top left, #020617, #030712);
+        border: 1px solid rgba(31, 41, 55, 0.95);
+        padding: 0.75rem 0.85rem;
+        font-size: 0.8rem;
+        color: #e5e7eb;
+        height: 100%;
+        overflow: auto;
+      }
+
+      .details-title {
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 0.35rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+
+      .details-pill {
+        border-radius: 999px;
+        padding: 0.1rem 0.45rem;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        background: rgba(37, 99, 235, 0.15);
+        color: #93c5fd;
+      }
+
+      .details-section-label {
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #9ca3af;
+        margin-top: 0.35rem;
+        margin-bottom: 0.1rem;
+      }
+
+      .details-rooms {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .details-rooms li {
+        padding: 0.12rem 0;
+        border-bottom: 1px dashed rgba(31, 41, 55, 0.9);
+        font-size: 0.78rem;
+      }
+
+      .details-rooms li:last-child {
+        border-bottom: none;
+      }
+
+      .details-empty {
+        font-size: 0.76rem;
+        color: #6b7280;
+      }
+
+      @media (max-width: 900px) {
+        .tree-layout {
+          grid-template-columns: minmax(0, 1fr);
+          height: auto;
+        }
+        .details-panel {
+          margin-top: 0.6rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 0.75rem;
+        }
+        .tree-container {
+          padding: 0.75rem 0.85rem;
+        }
+        h1 {
+          font-size: 1.25rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Super Metroid Map Rando Tech Tree</h1>
+    <div class="subtitle">
+      Difficulty → Tech → Room (rooms are placeholders until you map them).
+    </div>
+
+    <div class="tree-container">
+      <div class="tabs">
+        <button
+          id="tab-by-difficulty"
+          class="tab-button active"
+          type="button"
+        >
+          By difficulty
+        </button>
+        <button id="tab-up-to" class="tab-button" type="button">
+          Up to…
+        </button>
+      </div>
+
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <button id="expand-all" type="button">Expand all</button>
+          <button id="collapse-all" type="button">Collapse all</button>
+        </div>
+        <div class="search-input">
+          <input
+            id="search"
+            type="text"
+            placeholder="Search tech or room…"
+            autocomplete="off"
+          />
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="11" cy="11" r="6" stroke-width="2"></circle>
+            <path d="M16 16L20 20" stroke-width="2"></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="legend">
+        <span><span class="pill pill-diff"></span> Difficulty</span>
+        <span><span class="pill pill-tech"></span> Tech</span>
+        <span><span class="pill pill-room"></span> Room</span>
+      </div>
+
+      <div class="tree-layout">
+        <div class="tree-scroll">
+          <div id="view-by-difficulty">
+            <ul id="tree-root" class="tree"></ul>
+          </div>
+
+          <div id="view-up-to" class="hidden">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.4rem;
+                margin-bottom: 0.35rem;
+                font-size: 0.8rem;
+              "
+            >
+              <span style="color: #9ca3af">Show tech up to</span>
+              <select
+                id="up-to-select"
+                style="
+                  background: rgba(15, 23, 42, 0.95);
+                  color: #e5e7eb;
+                  border-radius: 999px;
+                  border: 1px solid rgba(55, 65, 81, 0.9);
+                  padding: 0.2rem 0.65rem;
+                  font-size: 0.78rem;
+                  outline: none;
+                "
+              ></select>
+            </div>
+            <ul id="tree-up-to" class="tree"></ul>
+          </div>
+        </div>
+
+        <aside class="details-panel" id="details-panel">
+          <div class="details-title">
+            <span style="opacity: 0.7">Select a tech or room</span>
+          </div>
+          <div class="details-body">
+            <p class="details-empty">
+              Click on a tech to see the rooms where you use it. To wire this
+              up, add room children under each tech in
+              <code style="font-size: 0.75rem">data/tech_tree.json</code>.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script>
+      async function loadTreeData() {
+        const res = await fetch("./data/tech_tree.json");
+        if (!res.ok) throw new Error("Failed to load tech_tree.json");
+        return res.json();
+      }
+
+      function collectRooms(node, depth) {
+        // For a difficulty node: gather rooms under all techs
+        if (depth === 0) {
+          const rooms = [];
+          (node.children || []).forEach((tech) => {
+            (tech.children || []).forEach((room) => rooms.push(room.name));
+          });
+          return rooms;
+        }
+        // For a tech node: its children are rooms
+        if (depth === 1) {
+          return (node.children || []).map((r) => r.name);
+        }
+        // For a room node: just itself
+        if (depth >= 2) {
+          return [node.name];
+        }
+        return [];
+      }
+
+      function updateDetails(kind, name, rooms) {
+        const panel = document.getElementById("details-panel");
+        const titleEl = panel.querySelector(".details-title");
+        const bodyEl = panel.querySelector(".details-body");
+
+        titleEl.innerHTML = "";
+        const labelSpan = document.createElement("span");
+        labelSpan.textContent = name;
+        titleEl.appendChild(labelSpan);
+
+        const pill = document.createElement("span");
+        pill.className = "details-pill";
+        pill.textContent =
+          kind === "difficulty"
+            ? "Difficulty"
+            : kind === "tech"
+            ? "Tech"
+            : "Room";
+        titleEl.appendChild(pill);
+
+        bodyEl.innerHTML = "";
+
+        const sectionLabel = document.createElement("div");
+        sectionLabel.className = "details-section-label";
+        sectionLabel.textContent = "Rooms";
+        bodyEl.appendChild(sectionLabel);
+
+        if (!rooms.length) {
+          const empty = document.createElement("p");
+          empty.className = "details-empty";
+          empty.textContent =
+            kind === "room"
+              ? "Single room node."
+              : "No rooms wired yet for this node. Add room children under the tech in data/tech_tree.json.";
+          bodyEl.appendChild(empty);
+        } else {
+          const ul = document.createElement("ul");
+          ul.className = "details-rooms";
+          rooms.forEach((roomName) => {
+            const li = document.createElement("li");
+            li.textContent = roomName;
+            ul.appendChild(li);
+          });
+          bodyEl.appendChild(ul);
+        }
+      }
+
+      function createNodeElement(node, depth = 0) {
+        const li = document.createElement("li");
+        li.classList.add("node");
+
+        const hasChildren = Array.isArray(node.children) && node.children.length;
+        if (hasChildren) {
+          li.classList.add("has-children");
+        }
+
+        const label = document.createElement("div");
+        label.classList.add("node-label");
+
+        if (depth === 0) {
+          label.classList.add("difficulty");
+          li.dataset.kind = "difficulty";
+        } else if (depth === 1) {
+          label.classList.add("tech");
+          li.dataset.kind = "tech";
+        } else {
+          label.classList.add("room");
+          li.dataset.kind = "room";
+        }
+
+        li.dataset.name = node.name;
+        li.dataset.rooms = JSON.stringify(collectRooms(node, depth));
+
+        if (hasChildren) {
+          const chevron = document.createElement("span");
+          chevron.classList.add("chevron");
+          chevron.textContent = "›";
+          label.appendChild(chevron);
+        }
+
+        const text = document.createElement("span");
+        text.textContent = node.name;
+        label.appendChild(text);
+
+        if (hasChildren && depth < 2) {
+          const count = document.createElement("span");
+          count.classList.add("badge");
+          count.textContent = node.children.length;
+          label.appendChild(count);
+        }
+
+        li.appendChild(label);
+
+        if (hasChildren) {
+          const ul = document.createElement("ul");
+          node.children.forEach((child) => {
+            ul.appendChild(createNodeElement(child, depth + 1, techDescriptions));
+          });
+          li.appendChild(ul);
+        }
+
+        label.addEventListener("click", (event) => {
+          // Toggle collapse if this node has children and click wasn't on a badge
+          if (
+            hasChildren &&
+            !(event.target && event.target.classList.contains("badge"))
+          ) {
+            li.classList.toggle("collapsed");
+          }
+
+          // Update details panel selection
+          const kind = li.dataset.kind;
+          const name = li.dataset.name;
+          let rooms = [];
+          try {
+            rooms = JSON.parse(li.dataset.rooms || "[]");
+          } catch {
+            rooms = [];
+          }
+          updateDetails(kind, name, rooms);
+
+          // If tech node, show description popup
+          if (kind === "tech") {
+            openTechPopup(name, techDescriptions[name] || "");
+          }
+        });
+
+        li.dataset.label = node.name.toLowerCase();
+
+        return li;
+      }
+
+      function buildUpToTechList(data, maxDifficultyName) {
+        const order = [
+          "Implicit",
+          "Basic",
+          "Medium",
+          "Hard",
+          "Very Hard",
+          "Expert",
+          "Expert+",
+          "Extreme",
+          "Extreme+",
+          "Insane",
+          "Insane+",
+          "Beyond",
+          "Ignored"
+        ];
+
+        const maxIndex = order.indexOf(maxDifficultyName);
+        if (maxIndex === -1) return [];
+
+        const allowed = new Set(order.slice(0, maxIndex + 1));
+        const techNodes = [];
+
+        data.children.forEach((difficultyNode) => {
+          if (!allowed.has(difficultyNode.name)) return;
+          (difficultyNode.children || []).forEach((tech) => {
+            techNodes.push(tech);
+          });
+        });
+
+        techNodes.sort((a, b) => a.name.localeCompare(b.name));
+        return techNodes;
+      }
+
+      function setAllCollapsed(rootEl, collapsed) {
+        rootEl.querySelectorAll(".node.has-children").forEach((node) => {
+          node.classList.toggle("collapsed", collapsed);
+        });
+      }
+
+      function applySearch(rootEl, query) {
+        const q = query.trim().toLowerCase();
+        rootEl
+          .querySelectorAll(".node-label")
+          .forEach((el) => el.classList.remove("highlight"));
+
+        if (!q) {
+          rootEl
+            .querySelectorAll(".node")
+            .forEach((node) => (node.style.display = ""));
+          return;
+        }
+
+        rootEl.querySelectorAll(".node").forEach((node) => {
+          const labelText =
+            node.querySelector(".node-label span:nth-child(2)")?.textContent.toLowerCase() ||
+            "";
+          const match = labelText.includes(q);
+          node.style.display = match ? "" : "none";
+          if (match) {
+            node.querySelector(".node-label").classList.add("highlight");
+            let parent = node.parentElement;
+            while (parent && parent !== rootEl) {
+              if (parent.classList.contains("node")) {
+                parent.style.display = "";
+                parent.classList.remove("collapsed");
+              }
+              parent = parent.parentElement;
+            }
+          }
+        });
+      }
+
+      (async function init() {
+        try {
+          const [data, techDescriptions] = await Promise.all([
+            loadTreeData(),
+            loadTechDescriptions()
+          ]);
+          const rootEl = document.getElementById("tree-root");
+          const upToRootEl = document.getElementById("tree-up-to");
+
+          data.children.forEach((difficulty) => {
+            rootEl.appendChild(createNodeElement(difficulty, 0, techDescriptions));
+          });
+
+          // Collapse everything by default in the main view
+          setAllCollapsed(rootEl, true);
+
+          document
+            .getElementById("expand-all")
+            .addEventListener("click", () =>
+              setAllCollapsed(rootEl, false)
+            );
+          document
+            .getElementById("collapse-all")
+            .addEventListener("click", () =>
+              setAllCollapsed(rootEl, true)
+            );
+
+          document
+            .getElementById("search")
+            .addEventListener("input", (e) =>
+              applySearch(rootEl, e.target.value)
+            );
+
+          // Tab switching
+          const tabByDifficulty = document.getElementById("tab-by-difficulty");
+          const tabUpTo = document.getElementById("tab-up-to");
+          const viewByDifficulty = document.getElementById("view-by-difficulty");
+          const viewUpTo = document.getElementById("view-up-to");
+
+          function activateTab(name) {
+            const isByDiff = name === "by-difficulty";
+            tabByDifficulty.classList.toggle("active", isByDiff);
+            tabUpTo.classList.toggle("active", !isByDiff);
+            viewByDifficulty.classList.toggle("hidden", !isByDiff);
+            viewUpTo.classList.toggle("hidden", isByDiff);
+          }
+
+          tabByDifficulty.addEventListener("click", () =>
+            activateTab("by-difficulty")
+          );
+          tabUpTo.addEventListener("click", () =>
+            activateTab("up-to")
+          );
+
+          // Up-to difficulty selector
+          const select = document.getElementById("up-to-select");
+          const difficultiesInData = data.children.map((d) => d.name);
+          difficultiesInData.forEach((name, idx) => {
+            const opt = document.createElement("option");
+            opt.value = name;
+            opt.textContent = name;
+            if (idx === 1) opt.selected = true; // default to Basic if present
+            select.appendChild(opt);
+          });
+
+          function renderUpToView() {
+            upToRootEl.innerHTML = "";
+            const maxDiff = select.value || difficultiesInData[0];
+            const techNodes = buildUpToTechList(data, maxDiff);
+            techNodes.forEach((tech) => {
+              upToRootEl.appendChild(createNodeElement(tech, 1, techDescriptions));
+            });
+            setAllCollapsed(upToRootEl, true);
+          }
+
+          select.addEventListener("change", renderUpToView);
+          renderUpToView();
+
+          // Tech description popup: Close and Read aloud
+          const popupDialog = document.getElementById("tech-popup-dialog");
+          document.getElementById("tech-popup-close").addEventListener("click", closeTechPopup);
+          document.getElementById("tech-popup-read-aloud").addEventListener("click", () => {
+            readTechAloud(popupDialog.dataset.popupName || "", popupDialog.dataset.popupDesc || "");
+          });
+          document.getElementById("tech-popup-overlay").addEventListener("click", (e) => {
+            if (e.target.id === "tech-popup-overlay") closeTechPopup();
+          });
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && document.getElementById("tech-popup-overlay").classList.contains("open")) {
+              closeTechPopup();
+            }
+          });
+        } catch (err) {
+          console.error(err);
+          document.getElementById("tree-root").innerHTML =
+            "<li>Failed to load tech_tree.json</li>";
+        }
+      })();
+    </script>
+  </body>
+</html>
+

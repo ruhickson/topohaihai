@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Is Replacing the Consumer, Not the Worker</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
+:root {
+-ink: #0f0e0c;
+-paper: #f5f0e8;
+-accent: #c8401a;
+-mid: #7a7468;
+-rule: #d4cfc5;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+background: var(-paper);
+color: var(-ink);
+font-family: "IBM Plex Sans", sans-serif;
+font-weight: 300;
+line-height: 1.75;
+font-size: 18px;
+}
+
+/* MASTHEAD */
+.masthead {
+border-bottom: 3px solid var(-ink);
+padding: 1.5rem 2rem 1rem;
+display: flex;
+align-items: baseline;
+gap: 1.5rem;
+}
+.masthead-label {
+font-family: "IBM Plex Mono", monospace;
+font-size: 0.7rem;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(-mid);
+}
+.masthead-tag {
+font-family: "IBM Plex Mono", monospace;
+font-size: 0.7rem;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+background: var(-accent);
+color: var(-paper);
+padding: 0.2em 0.5em;
+}
+
+/* LAYOUT */
+.wrapper {
+max-width: 820px;
+margin: 0 auto;
+padding: 0 2rem 6rem;
+}
+
+/* HERO */
+.hero {
+padding: 4rem 0 2.5rem;
+border-bottom: 1px solid var(-rule);
+margin-bottom: 3rem;
+}
+
+.kicker {
+font-family: "IBM Plex Mono", monospace;
+font-size: 0.72rem;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: var(-accent);
+margin-bottom: 1.2rem;
+}
+
+h1 {
+font-family: "Playfair Display", serif;
+font-size: clamp(2.4rem, 5vw, 3.8rem);
+font-weight: 900;
+line-height: 1.1;
+letter-spacing: -0.02em;
+margin-bottom: 1.5rem;
+max-width: 680px;
+}
+
+h1 em {
+font-style: italic;
+color: var(-accent);
+}
+
+.standfirst {
+font-size: 1.15rem;
+font-weight: 400;
+line-height: 1.6;
+color: #3a3730;
+max-width: 600px;
+border-left: 3px solid var(-accent);
+padding-left: 1.2rem;
+}
+
+.byline {
+margin-top: 2rem;
+font-family: "IBM Plex Mono", monospace;
+font-size: 0.72rem;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(-mid);
+}
+
+/* BODY */
+.body-text p {
+margin-bottom: 1.6rem;
+max-width: 680px;
+}
+
+h2 {
+font-family: "Playfair Display", serif;
+font-size: 1.65rem;
+font-weight: 700;
+line-height: 1.2;
+margin: 3rem 0 1.2rem;
+max-width: 680px;
+}
+
+/* PULL QUOTE */
+.pull-quote {
+margin: 3.5rem 0;
+padding: 2rem 2.5rem;
+border-top: 3px solid var(-ink);
+border-bottom: 1px solid var(-rule);
+background: #ede8de;
+}
+
+.pull-quote p {
+font-family: "Playfair Display", serif;
+font-size: 1.4rem;
+font-style: italic;
+line-height: 1.45;
+color: var(-ink);
+max-width: 100%;
+margin: 0;
+}
+
+/* CALLOUT BOX */
+.callout {
+margin: 3rem 0;
+padding: 1.8rem 2rem;
+background: var(-ink);
+color: var(-paper);
+}
+
+.callout-label {
+font-family: "IBM Plex Mono", monospace;
+font-size: 0.65rem;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: var(-accent);
+margin-bottom: 0.8rem;
+}
+
+.callout p {
+font-size: 1rem;
+line-height: 1.65;
+max-width: 100%;
+color: #e8e2d6;
+margin: 0;
+}
+
+/* RULE */
+.section-rule {
+border: none;
+border-top: 1px solid var(-rule);
+margin: 2.5rem 0;
+max-width: 680px;
+}
+
+/* FOOTER */
+.post-footer {
+margin-top: 4rem;
+padding-top: 2rem;
+border-top: 3px solid var(-ink);
+font-family: "IBM Plex Mono", monospace;
+font-size: 0.72rem;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(-mid);
+}
+
+.tag-list {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+margin-top: 1rem;
+}
+
+.tag {
+background: var(-rule);
+padding: 0.25em 0.7em;
+font-size: 0.68rem;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+font-family: "IBM Plex Mono", monospace;
+}
+
+/* DECORATIVE NUMBER */
+.section-number {
+font-family: "Playfair Display", serif;
+font-size: 5rem;
+font-weight: 900;
+color: var(-rule);
+line-height: 1;
+display: block;
+margin-bottom: -1rem;
+user-select: none;
+}
+</style>
+
+</head>
+<body>
+
+<div class="masthead">
+<span class="masthead-label">Technology &amp; Society</span>
+<span class="masthead-tag">Opinion</span>
+<span class="masthead-label">March 2026</span>
+</div>
+
+<div class="wrapper">
+
+<div class="hero">
+<p class="kicker">The AI Displacement Nobody Is Talking About</p>
+<h1>AI Is Replacing the <em>Consumer,</em> Not the Worker</h1>
+<p class="standfirst">Everyone is watching AI with one eye on their job. But the real disruption is already happening somewhere else — in the way we browse, choose, and buy. The robot isn't after your desk. It's after your wallet.</p>
+<p class="byline">Est. read: 7 minutes</p>
+</div>
+
+<div class="body-text">
+
+<p>The great AI anxiety of our era is misplaced. In boardrooms, op-eds, and Reddit threads, the dominant fear is that artificial intelligence will hollow out the workforce — that lawyers, accountants, writers, and radiologists will wake up one morning to find their roles automated away. It's a legitimate concern, and it deserves serious attention. But it is not the most immediate disruption underway.</p>
+
+<p>The more immediate transformation — and the one that businesses, designers, and marketers are completely unprepared for — is the replacement of the consumer. AI agents are already beginning to browse on our behalf, compare products, filter options, initiate purchases, and manage subscriptions. The human clicking through websites, responding to retargeting ads, and abandoning shopping carts is being quietly, incrementally replaced by software that does the same job faster and without sentiment. The customer, that cherished human figure at the end of every sales funnel, is going automated.</p>
+
+<h2>The Agent in the Room</h2>
+
+<p>Agentic AI — systems capable of taking sequences of actions in the world, not just answering questions — is still young. Today's agents are impressive but fragile. They can book a restaurant, draft an email, or pull a report. But they stumble badly when websites are inconsistent, when navigation logic is ambiguous, or when a process requires interpreting something designed exclusively for human intuition. They need guardrails. They need clarity. They need digital environments built with the same explicitness you would apply to a legal contract.</p>
+
+<p>This is not a limitation that will simply vanish with a better model. Even as AI capability improves dramatically, agentic systems will continue to rely on clear, unambiguous instructions in order to act reliably and safely. A human can muddle through a confusing checkout process, inferring intent and tolerating friction. An agent will fail silently, abandon the task, or — worse — take an action the user never intended. For a very long time, the burden will not be on the AI to figure out your interface. The burden will be on your interface to be legible to the AI.</p>
+
+<div class="pull-quote">
+<p>"The web was built for eyes. What's coming next needs to be built for software. The two requirements are not the same, and they are not compatible by default."</p>
+</div>
+
+<h2>Pac-Man and the Problem of Optimal Routes</h2>
+
+<span class="section-number">—</span>
+
+<p>Here is a useful way to think about what's really happening. Consider the classic arcade game Pac-Man. A skilled human player learns the maze over time. They develop an intuitive route — one that collects power pellets efficiently, avoids ghosts at the right moments, and adapts on the fly when something unexpected happens. The route is personal, emergent, and shaped by the player's own reflexes and preferences. It is, in a sense, uniquely theirs.</p>
+
+<p>Now imagine an AI agent playing the same game. It will also collect the power pellets. It may even finish faster. But it will choose the optimal route for itself — one derived from computation, not from the player's habits, preferences, or gameplay style. The path it takes may be entirely different from what the human would have chosen. And crucially, it optimises for its own definition of success, which may not perfectly map to what the user actually wants from the experience.</p>
+
+<p>This is the core challenge facing every digital business in the next decade. Your sales funnel, your product pages, your comparison tools — these were all designed as mazes for human Pac-Men. The signage, the friction points, the upsell prompts, the loyalty mechanisms: all of it assumes a human navigating with human psychology. An AI agent moving through the same maze will ignore most of it. It will take the shortest computational path to the most legible outcome, and your carefully crafted conversion journey will be invisible to it.</p>
+
+<p>The challenge of the future internet is, therefore, to redesign the maze. Not to trick the agent, not to slow it down, but to ensure that when AI navigates your digital environment, it reliably reaches the best outcome — for the user it represents. Only when that redesign is complete, when the maze is as navigable for software as it is for humans, can we genuinely hand the mundane work of daily transactions over to the robots.</p>
+
+<div class="callout">
+<p class="callout-label">What This Means in Practice</p>
+<p>Websites need machine-readable product data, consistent navigation schemas, and unambiguous call-to-action logic. Marketing needs to speak in terms an AI can evaluate, not just terms a human can feel. Transactions need to be structured as clean decision trees, not persuasion funnels. The UX of the next decade is UX that works for both audiences simultaneously.</p>
+</div>
+
+<h2>Clarity as the New Competitive Advantage</h2>
+
+<p>What does this mean for businesses today? It means that clarity is no longer just a design virtue — it is a strategic imperative. The companies that win in an agentic world will not be the ones with the most emotionally resonant branding or the cleverest retargeting strategy. They will be the ones whose digital surfaces are the most legible to an AI making decisions at speed.</p>
+
+<p>Consider what this requires across every touchpoint. A website designed for agentic AI needs structured, consistent product information — not artful ambiguity. A marketing channel needs to communicate value in terms that are evaluable, not just evocative. A sales process needs to present options in a form that can be compared, filtered, and acted upon without human interpretation. A transaction needs to be so unambiguous that it can be completed end-to-end without a human ever touching it. This is a higher standard of clarity than we have ever demanded of digital design before. It is, in a way, a return to first principles — what are we actually offering, and why is it the right choice? Strip away everything that relies on a human's susceptibility to mood, aesthetics, or social proof, and what remains needs to be good enough to stand on its own.</p>
+
+<hr class="section-rule">
+
+<h2>The Trust Equation</h2>
+
+<p>There is, of course, enormous resistance to all of this. AI scepticism is real, it is broadly distributed, and much of it is justified. People do not trust systems they do not understand, and they especially do not trust systems making decisions on their behalf with money, personal data, or consequential choices in play.</p>
+
+<p>But resistance tends to dissolve when results are good. The pattern is already visible in the places where AI has achieved genuine adoption: flight comparison tools that save someone €200 on a trip, fraud detection that quietly protects a bank account, a streaming recommendation that surfaces a film the user ends up loving. In each of these cases, the AI's purpose is narrow, well-defined, and the benefit to the user is direct and tangible. Nobody resists useful. The more consistently an automated system delivers a positive outcome, the more willingly the user extends it authority over the next decision, and the one after that.</p>
+
+<p>This is the path to genuine AI integration — not grand announcements of AI-powered everything, but a quiet accumulation of small, trustworthy wins. Each positive interaction raises the ceiling of what a user will allow the system to do next. Trust is built in increments, through demonstrated competence in bounded tasks. Overpromise the scope, and the whole edifice collapses at the first error.</p>
+
+<div class="pull-quote">
+<p>"Nobody resists useful. The more consistently an automated system delivers a positive outcome, the more willingly the user extends it authority over the next decision."</p>
+</div>
+
+<h2>The Maze Needs Rebuilding</h2>
+
+<p>The workforce displacement story will run for years, and it deserves the attention it is getting. But the quieter story — the one unfolding right now in analytics dashboards, in declining click-through rates, in the rise of zero-UI commerce — is that the consumer is being automated first. The human on the other side of your digital product is increasingly a piece of software acting on a human's behalf.</p>
+
+<p>That software needs different things from your digital environment than a human does. It needs structure, not charm. It needs consistency, not personality. It needs a maze it can navigate reliably, not one designed to create the serendipity of discovery. Build for that audience — without abandoning the human one — and you are building for the next decade. Fail to, and your beautifully optimised conversion funnel will be invisible to the entities increasingly doing the choosing.</p>
+
+<p>The Pac-Man maze was designed for human hands on a joystick. The ghosts are still there. The pellets are still there. But the player has changed. It is time to redraw the walls.</p>
+
+</div>
+
+<div class="post-footer">
+<div>Topics</div>
+<div class="tag-list">
+<span class="tag">Agentic AI</span>
+<span class="tag">Digital Strategy</span>
+<span class="tag">UX Design</span>
+<span class="tag">Future of Commerce</span>
+<span class="tag">Consumer Behaviour</span>
+<span class="tag">AI Adoption</span>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
