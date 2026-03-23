@@ -1,0 +1,250 @@
+/* topohaihai — dark purple, dark gold, light grey */
+:root {
+  --bg-deep: #130a1f;
+  --bg-panel: #1e1230;
+  --bg-elevated: #2a1a42;
+  --gold-dark: #6b5420;
+  --gold-mid: #9a7b2c;
+  --gold-bright: #c9a227;
+  --text: #d4d0dc;
+  --text-muted: #9a95a8;
+  --border: rgba(201, 162, 39, 0.22);
+  --link: #e8d48b;
+  --link-hover: #f5e6b8;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg-deep);
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(107, 84, 32, 0.18), transparent 50%),
+    linear-gradient(180deg, var(--bg-deep) 0%, #0f0818 100%);
+}
+
+a {
+  color: var(--link);
+  text-decoration-color: var(--gold-dark);
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration-color: var(--gold-mid);
+}
+
+.site-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(30, 18, 48, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.site-header__brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+  color: var(--gold-bright);
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: var(--link-hover);
+}
+
+.site-tabs {
+  display: flex;
+  gap: 0.15rem;
+  padding: 0.2rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.site-tab {
+  padding: 0.45rem 1.1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.site-tab:hover {
+  color: var(--link);
+  background: rgba(201, 162, 39, 0.1);
+}
+
+.site-tab--active {
+  color: var(--gold-bright);
+  background: rgba(201, 162, 39, 0.18);
+  pointer-events: none;
+}
+
+.site-footer {
+  margin-top: auto;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.index,
+.post,
+.about {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.about__title {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  color: var(--gold-bright);
+  font-weight: 600;
+}
+
+.about__lead {
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.about__h2 {
+  margin: 1.75rem 0 0.65rem;
+  font-size: 1.15rem;
+  color: var(--gold-mid);
+  font-weight: 600;
+}
+
+.about__socials {
+  margin: 0;
+  line-height: 1.9;
+}
+
+.about__socials a {
+  font-weight: 500;
+}
+
+.index__heading {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  color: var(--gold-bright);
+  font-weight: 600;
+}
+
+.index__meta {
+  margin: 0 0 2rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.index__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.index__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.index__date {
+  font-size: 0.85rem;
+  color: var(--gold-mid);
+  font-variant-numeric: tabular-nums;
+  min-width: 7.5rem;
+}
+
+.index__link {
+  font-weight: 500;
+}
+
+.post__date {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: var(--gold-mid);
+}
+
+.post__title {
+  margin: 0 0 1.75rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.2;
+  color: var(--gold-bright);
+  font-weight: 600;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gold-mid);
+  letter-spacing: 0.02em;
+}
+
+.section__body p,
+.section--body p {
+  margin: 0 0 1rem;
+  color: var(--text);
+}
+
+.section__body p:last-child,
+.section--body p:last-child {
+  margin-bottom: 0;
+}
+
+.section__body strong,
+.section--body strong {
+  color: var(--link-hover);
+}
+
+.section__body em,
+.section--body em {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* bullets in metadata sections */
+.section__body {
+  overflow-wrap: anywhere;
+}

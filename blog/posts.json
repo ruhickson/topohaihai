@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "lylat-wars",
+    "title": "Lylat Wars",
+    "date": "2026-03-19",
+    "file": "lylat-wars.txt"
+  },
+  {
+    "slug": "fifa-99",
+    "title": "FIFA 99",
+    "date": "2026-02-26",
+    "file": "fifa-99.txt"
+  },
+  {
+    "slug": "killer-instinct-gold",
+    "title": "Killer Instinct Gold",
+    "date": "2026-02-20",
+    "file": "killer-instinct-gold.txt"
+  },
+  {
+    "slug": "pilotwings-64",
+    "title": "Pilotwings 64",
+    "date": "2026-02-14",
+    "file": "pilotwings-64.txt"
+  },
+  {
+    "slug": "top-gear-overdrive",
+    "title": "Top Gear Overdrive",
+    "date": "2026-02-09",
+    "file": "top-gear-overdrive.txt"
+  },
+  {
+    "slug": "f-zero-x",
+    "title": "F-Zero X",
+    "date": "2026-02-02",
+    "file": "f-zero-x.txt"
+  },
+  {
+    "slug": "1080-snowboarding",
+    "title": "1080\u00b0 Snowboarding",
+    "date": "2026-01-31",
+    "file": "1080-snowboarding.txt"
+  },
+  {
+    "slug": "worms-armageddon",
+    "title": "Worms Armageddon",
+    "date": "2026-01-07",
+    "file": "worms-armageddon.txt"
+  },
+  {
+    "slug": "star-wars-episode-i-battle-for-naboo",
+    "title": "Star Wars Episode I: Battle for Naboo",
+    "date": "2026-01-05",
+    "file": "star-wars-episode-i-battle-for-naboo.txt"
+  },
+  {
+    "slug": "wcw-nwo-revenge",
+    "title": "WCW/nWo Revenge",
+    "date": "2026-01-05",
+    "file": "wcw-nwo-revenge.txt"
+  },
+  {
+    "slug": "star-wars-rogue-squadron",
+    "title": "Star Wars: Rogue Squadron",
+    "date": "2025-12-30",
+    "file": "star-wars-rogue-squadron.txt"
+  },
+  {
+    "slug": "castlevania",
+    "title": "Castlevania (Castlevania 64)",
+    "date": "2025-12-24",
+    "file": "castlevania.txt"
+  },
+  {
+    "slug": "legend-of-zelda-ocarina-of-time",
+    "title": "The Legend of Zelda: Ocarina of Time",
+    "date": "2025-12-07",
+    "file": "legend-of-zelda-ocarina-of-time.txt"
+  },
+  {
+    "slug": "banjo-kazooie",
+    "title": "Banjo-Kazooie",
+    "date": "2025-11-22",
+    "file": "banjo-kazooie.txt"
+  },
+  {
+    "slug": "mission-impossible",
+    "title": "Mission: Impossible (N64)",
+    "date": "2025-11-20",
+    "file": "mission-impossible.txt"
+  },
+  {
+    "slug": "wave-race-64",
+    "title": "Wave Race 64",
+    "date": "2025-11-17",
+    "file": "wave-race-64.txt"
+  },
+  {
+    "slug": "pokemon-snap",
+    "title": "Pok\u00e9mon Snap",
+    "date": "2025-11-06",
+    "file": "pokemon-snap.txt"
+  },
+  {
+    "slug": "south-park",
+    "title": "South Park",
+    "date": "2025-11-05",
+    "file": "south-park.txt"
+  },
+  {
+    "slug": "mario-tennis",
+    "title": "Mario Tennis",
+    "date": "2025-11-04",
+    "file": "mario-tennis.txt"
+  },
+  {
+    "slug": "goldeneye-007",
+    "title": "GoldenEye 007",
+    "date": "2025-11-02",
+    "file": "goldeneye-007.txt"
+  },
+  {
+    "slug": "diddy-kong-racing",
+    "title": "Diddy Kong Racing",
+    "date": "2025-10-29",
+    "file": "diddy-kong-racing.txt"
+  },
+  {
+    "slug": "international-superstar-soccer-98",
+    "title": "International Superstar Soccer '98 (ISS 98)",
+    "date": "2025-10-29",
+    "file": "international-superstar-soccer-98.txt"
+  },
+  {
+    "slug": "turok-dinosaur-hunter",
+    "title": "Turok: Dinosaur Hunter",
+    "date": "2025-10-29",
+    "file": "turok-dinosaur-hunter.txt"
+  },
+  {
+    "slug": "blast-corps",
+    "title": "Blast Corps",
+    "date": "2025-10-25",
+    "file": "blast-corps.txt"
+  },
+  {
+    "slug": "perfect-dark",
+    "title": "Perfect Dark",
+    "date": "2025-10-19",
+    "file": "perfect-dark.txt"
+  },
+  {
+    "slug": "paper-mario",
+    "title": "Paper Mario",
+    "date": "2025-10-15",
+    "file": "paper-mario.txt"
+  },
+  {
+    "slug": "star-wars-episode-i-racer",
+    "title": "Star Wars Episode I: Racer",
+    "date": "2025-10-07",
+    "file": "star-wars-episode-i-racer.txt"
+  },
+  {
+    "slug": "turok-2-seeds-of-evil",
+    "title": "Turok 2: Seeds of Evil",
+    "date": "2025-10-05",
+    "file": "turok-2-seeds-of-evil.txt"
+  },
+  {
+    "slug": "quake-64",
+    "title": "Quake (Quake 64)",
+    "date": "2025-10-04",
+    "file": "quake-64.txt"
+  },
+  {
+    "slug": "super-smash-bros",
+    "title": "Super Smash Bros.",
+    "date": "2025-09-19",
+    "file": "super-smash-bros.txt"
+  },
+  {
+    "slug": "mario-party",
+    "title": "Mario Party",
+    "date": "2025-09-18",
+    "file": "mario-party.txt"
+  },
+  {
+    "slug": "super-mario-64",
+    "title": "Super Mario 64",
+    "date": "2025-09-10",
+    "file": "super-mario-64.txt"
+  }
+]
