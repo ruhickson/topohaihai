@@ -1,0 +1,30 @@
+<!--
+  Copy this file to analytics.fragment.html (same folder as this repo's root).
+  analytics.fragment.html is gitignored so you can keep snippets out of git if you want.
+
+  The build script injects the contents just before </body> on every page.
+
+  Pick ONE approach below (delete the rest), or use Netlify Snippet Injection instead
+  (Site settings → Environment → Snippet injection) and leave this file empty/absent.
+-->
+
+<!-- Plausible (privacy-friendly; needs your domain registered at plausible.io) -->
+<!--
+<script defer data-domain="YOURDOMAIN.netlify.app" src="https://plausible.io/js/script.js"></script>
+-->
+
+<!-- Google Analytics 4 -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+
+<!-- Cloudflare Web Analytics (free; token from Cloudflare dashboard) -->
+<!--
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN"}'></script>
+-->

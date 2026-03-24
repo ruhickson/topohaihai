@@ -120,10 +120,18 @@ body {
   flex-direction: column;
 }
 
-.index,
+.index {
+  max-width: 72rem;
+}
+
 .post,
 .about {
   max-width: 42rem;
+}
+
+.index,
+.post,
+.about {
   margin: 0 auto;
   padding: 2rem 1.25rem 4rem;
 }
@@ -165,9 +173,283 @@ body {
 }
 
 .index__meta {
-  margin: 0 0 2rem;
+  margin: 0 0 1.5rem;
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+/* Overview charts (Chart.js) */
+.index__charts {
+  margin-bottom: 2rem;
+  padding: 1.25rem 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.index__charts-heading {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+  color: var(--gold-bright);
+  font-weight: 600;
+}
+
+.index__charts-lead {
+  margin: 0 0 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.index__charts-subheading {
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--gold-mid);
+}
+
+.index__charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.25rem 1.5rem;
+  align-items: stretch;
+}
+
+.chart-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0.85rem 0.9rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(201, 162, 39, 0.18);
+  background: rgba(30, 18, 48, 0.45);
+}
+
+.chart-card__title {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gold-mid);
+  line-height: 1.25;
+}
+
+.chart-card__hint {
+  margin: 0 0 0.65rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.chart-card__canvas {
+  position: relative;
+  flex: 1;
+  min-height: 200px;
+  max-height: 260px;
+  width: 100%;
+}
+
+.chart-card__canvas canvas {
+  max-height: 260px;
+}
+
+.chart-card__canvas--clickable canvas {
+  cursor: pointer;
+}
+
+/* Posts page: main column + Contents sidebar */
+.index__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 19rem);
+  gap: 2rem 2.25rem;
+  align-items: start;
+}
+
+.index__primary {
+  min-width: 0;
+}
+
+/* Contents: platform / year / score (right sidebar on wide screens) */
+.browse--sidebar {
+  margin-bottom: 0;
+  padding: 1rem 1rem 1.15rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  align-self: start;
+  position: sticky;
+  top: 0.75rem;
+  max-height: calc(100vh - 1.5rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@media (max-width: 56rem) {
+  .index__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .browse--sidebar {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.browse__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: var(--gold-bright);
+  font-weight: 600;
+}
+
+.browse--sidebar .browse__title {
+  font-size: 1.1rem;
+}
+
+.browse__intro {
+  margin: 0 0 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.browse--sidebar .browse__intro {
+  font-size: 0.82rem;
+  margin-bottom: 1rem;
+}
+
+.browse__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.25rem 1.5rem;
+  align-items: start;
+}
+
+.browse--sidebar .browse__grid {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.browse__col-title {
+  margin: 0 0 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gold-mid);
+}
+
+.browse__details {
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.browse__summary {
+  padding: 0.55rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.browse__summary::-webkit-details-marker {
+  display: none;
+}
+
+.browse__count {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.browse__details[open] .browse__summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.browse__list {
+  margin: 0;
+  padding: 0.4rem 0.75rem 0.65rem 1.5rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.browse__list li {
+  margin-bottom: 0.25rem;
+}
+
+.browse__empty {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Filter dropdowns above “All posts” */
+.browse-filters {
+  margin-bottom: 1.75rem;
+}
+
+.browse-filters__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem 1rem;
+}
+
+.browse-filters__row + .browse-filters__row {
+  margin-top: 0.65rem;
+}
+
+.browse-filters__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 10rem;
+}
+
+.browse-filters__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gold-mid);
+}
+
+.browse-filters__select {
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-panel);
+  color: var(--text);
+  font-size: 0.9rem;
+  max-width: 100%;
+}
+
+.browse-filters__clear {
+  padding: 0.45rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--link);
+  font-size: 0.88rem;
+  cursor: pointer;
+  align-self: center;
+}
+
+.browse-filters__clear:hover {
+  color: var(--link-hover);
+  border-color: var(--gold-mid);
+}
+
+.index__list-heading {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  color: var(--gold-mid);
+  font-weight: 600;
 }
 
 .index__list {
@@ -178,22 +460,39 @@ body {
 
 .index__item {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  flex-wrap: nowrap;
+  align-items: flex-start;
   gap: 0.75rem 1rem;
   padding: 0.85rem 0;
   border-bottom: 1px solid var(--border);
 }
 
+.index__item[hidden] {
+  display: none;
+}
+
 .index__date {
+  flex-shrink: 0;
   font-size: 0.85rem;
   color: var(--gold-mid);
   font-variant-numeric: tabular-nums;
   min-width: 7.5rem;
 }
 
+.index__item-body {
+  flex: 1;
+  min-width: 0;
+}
+
 .index__link {
   font-weight: 500;
+}
+
+.index__tags {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.35;
 }
 
 .post__date {

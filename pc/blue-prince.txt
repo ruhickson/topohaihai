@@ -1,0 +1,32 @@
+Blue Prince
+===========
+
+Description
+-----------
+Roguelike puzzle adventure built around drafting rooms in a shifting manor—each run rearranges the floor plan and asks you to plan routes, resources, and risk.
+
+Genre: Puzzle / roguelike / adventure
+
+Developer: Dogubomb
+
+Publisher: Raw Fury
+
+Platform: PC
+
+Release dates (retail)
+----------------------
+• PC: April 10, 2025 (Steam — verify storefront)
+
+Ratings / certification
+-------------------------
+• Check regional storefront labels
+
+Other notes
+-----------
+• Stub article — expand with mechanics spoilers or not, your call.
+
+Thoughts
+--------
+Placeholder — replace with a real write-up.
+
+**Verdict:** 👍👍 (two thumbs up)

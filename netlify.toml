@@ -1,0 +1,10 @@
+# Static blog: run generator, publish the blog/ folder.
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  command = "python3 scripts/build_blog.py"
+  publish = "blog"
+
+[build.environment]
+  # Netlify build images include Python 3
+  PYTHON_VERSION = "3.11"
