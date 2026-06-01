@@ -7,15 +7,15 @@ Isometric helicopter action based on the Gulf War–era *Strike* series: rescue 
 
 Genre: Isometric shooter / action
 
-Developer: Gremlin Interactive (SNES — verify)
+Developer: Gremlin Interactive
 
-Publisher: Electronic Arts (typical NA)
+Publisher: Electronic Arts
 
 Platform: SNES
 
 Release dates (retail)
 ----------------------
-• North America: April 1992 (often cited — verify)
+• 1992
 
 Ratings / certification
 -------------------------
@@ -27,6 +27,14 @@ Other notes
 
 Thoughts
 --------
-Placeholder — replace with a real write-up.
+One odd thing about the isometric genre is how it feels dead, even though it's currently thriving. The success of recent games like Hades I & II and Diablo IV tells us as much. Perhaps what's been lost is the chunkiness of controlling a large, hulking warcraft, and dishing about death in the most hostile-possible environment. Whereas Hades might end up being a scaling power fantasy, Desert Strike and Mechwarrior 3050 (found elsewhere on this site) are anything but. They favour efficiency, thoughtfulness, and resource management as opposed to reaction speed, loadout, and randomness.
+
+But what makes Desert Strike fun in its own right? There are numerous war games that came out in or around the time of the gulf war, all of which can be looked back on as varying levels of propaganda, which can leave its own bad taste in the mouth. The purpose of Desert Strike is, after all, operating behind enemy lines in pseudo-Iraq and ultimately killing the country's ruler affectionately referred to as "The Madman", a thinly-veiled allegory for Saddam Hussein.
+
+The fun is in the meticulous layouts, the challenging difficulty, the shifting environements, and the clever enemy design. Everything about Desert Strike is carefully curated to give the player a specific experience more akin to a puzzle game than an action one. Of course there are skill checks on shooting and piloting, so it's more than just rock-paper-scissoring your enemies into submission. The open-world layout of each level makes for a non-linear approach to progression that is only really limitted by ammunition and fuel capacity, constantly driving you forward and forcing you to make smart decisions quickly.
+
+And what makes Desert Strike truly special is how it nails the feeling of isolation and constant danger - how you're alone behind enemy lines and the fate of a nation really depends on you. That a game released in 1992 with minimal dialogue, no music outside the title screen, and only four levels executes this so well is remarkable. At no point does it feel unfair and control is never wrestled from your fingertips. Along with hidden objectives and secrets, it also offers great replayability for a retro game.
+
+With the recent Early Access release of Cleared Hot, I look forward to checking out if that thing we lost may just have been lying dormant instead.
 
 **Verdict:** 👍👍 (two thumbs up)
